@@ -1,0 +1,30 @@
+.SearchResults {
+    width: 50%;
+    height: 950px;
+    overflow-y: scroll;
+    background-color: rgba(1, 12, 63, 0.7);
+    -webkit-box-shadow: 0 4px 2px 2px #000000;
+    box-shadow: 0 4px 2px 2px #000000;
+}
+
+.SearchResultsTitle {
+    z-index: 1;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0px;
+    padding: 15px;
+    border-bottom: 1px solid #6f6f6f;
+    background-color: rgba(1,12,63, 1.0);
+}
+
+::-webkit-scrollbar {
+    width: 0px;
+    background: transparent;
+}
+
+@media only screen and (max-width: 1020px) {
+    .SearchResults {
+        width: 90%;
+        margin-bottom: 2rem;
+    }
+}
